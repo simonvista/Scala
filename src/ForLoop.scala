@@ -24,7 +24,7 @@ object ForLoop {
       println(s"$i - $j")
     }
     println("-------------------")
-    val l1 = List(1, 2, 3, 4, 5)
+    val l1 = List(1, 2, 3, 4, 5);
     for (i <- l1) {
       print(s"$i, ")
     }
@@ -47,5 +47,6 @@ object ForLoop {
       i * i
     }
     println(res1)
+    //4
   }
 }

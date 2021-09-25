@@ -1,6 +1,6 @@
 import Array._
 
-object Array1 {
+object Arrays {
   val arr: Array[Int] = new Array[Int](4);
   val arr1 = new Array[Int](5); //0 0 0 0 0
   val arr2 = new Array[String](5); //null null null null
