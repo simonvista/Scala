@@ -1,23 +1,24 @@
-//lazy evaluation -> only return value when it was called
-class Strict {
-  val e = {
-    println("Strict")
-    9
-  }
-}
-class LazyEval {
-  lazy val e = {
-    println("LaztEval")
-    -1
-  }
-}
+
 
 object LazyEvaluation {
+  def m1(n: Int) {
+    println("m1")
+    println(n)
+  }
+  //called by name parameter method "=>"
+  def m2(n: => Int) {
+    println("m1")
+    println(n) //n returns value only when it was called
+  }
 
   def main(args: Array[String]): Unit = {
-    val x = new Strict //Strict
-    val y = new LazyEval
-    println(x.e) //9
-    println(y.e) //LaztEval \n -1
+    val add = (a: Int, b: Int) => {
+      println("add")
+      a + b
+    }
+
+    m1(add(5, 6))
+    m2(add(5, 6))
+
   }
 }
