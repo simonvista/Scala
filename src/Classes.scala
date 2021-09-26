@@ -1,4 +1,6 @@
 //class is a blue print of object
+//var -> gettter setter, val -> getter --
+//default -> -- --
 class User
 class User1(private var name: String, var age: Int) {
   def getName() = println(name)
