@@ -1,5 +1,7 @@
 
 
+package Inheritance
+
 object AnonymousFunction {
   object Math {
     def add(x: Int = 2, y: Int = 3) = x + y

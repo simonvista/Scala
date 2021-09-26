@@ -1,0 +1,7 @@
+
+
+package Inheritance
+
+object Rectangle {
+  
+}
